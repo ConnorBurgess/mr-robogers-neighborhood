@@ -35,7 +35,8 @@ Expect(beepBoop(1).toEqual(["Beep!"]);
 Test: "It should return a string with "Boop!" if the number 2 is inputted"
 Expect(beepBoop(2).toEqual(["Boop!"]);
 
-
+Test: "It should return an array of length of number input by user"
+Expect(beepBoop(2).toEqual([[0],[1],[2]])
 * * *
 
 

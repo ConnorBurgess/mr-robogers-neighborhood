@@ -3,22 +3,35 @@
 
 function beepBoop(input) {
 //  event.preventDefault();
-  for (var i = 0; i < 4; i++){
+  let inputArray = [];
+  for (var i = 1; i <= input; i++){
+    inputArray.push(i);
+
+  }
+  console.log(inputArray);
+
+
     let inputValue = input.toString();
 
     if (input === 1){
       inputValue = inputValue.replace(/[1]/g, "Beep!");
-      console.log(inputValue);
+   //   console.log(inputValue);
     }
     else if (input === 2){
       inputValue = inputValue.replace(/[2]/g, "Boop!");
-      console.log(inputValue);
+   //   console.log(inputValue);
     }
+    else if (input === 3){
+      inputValue = inputValue.replace(/3/g, "Won't you be my neighbor?");
+    //  console.log(inputValue);
+
+    }
+  
     else {
       console.log("Failed");
       
     }
-  }
+  
 }
 
 
@@ -26,9 +39,8 @@ function beepBoop(input) {
 
 // UI Logic
 
-beepBoop(2);
-beepBoop(1);
-beepBoop(3);
+beepBoop(10);
+
 //Take input
 
 //Push to inputArray (JQuery submit single use)
