@@ -1,17 +1,18 @@
 //Business logic
-$(document).ready(function() {
+//$(document).ready(function() {
 
 function beepBoop(input) {
 //  event.preventDefault();
-  for (i = 0; i <= 2; i++){
+  for (var i = 0; i < 2; i++){
     if (input === 1){
-      let inputValue = input;
-      inputValue.toString().replace(/\d[1]/g, "Beep!");
-      console.log(input);
-      console.log("Beep!");
+    let inputValue = input.toString();
+      inputValue = inputValue.replace(/[0-9]/g, "Beep!");
+      console.log(inputValue);
+      break;
     }
     else {
       console.log("Failed");
+      
     }
   }
 }
@@ -21,7 +22,7 @@ function beepBoop(input) {
 
 // UI Logic
 
-beepBoop(1);
+beepBoop(2);
 
 //Take input
 
@@ -31,4 +32,4 @@ beepBoop(1);
 
 //Output log section 
 
-});
+//});
