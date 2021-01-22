@@ -1,10 +1,16 @@
+.jumbotron { 
+  text-align:center;
+  margin-bottom: 10px;
+}
+
 #computer-screen {
   border: 2px solid green;
   display: flex;
+  height:37vw;
 }
 
 #computer-screen img {
-  width: 45vw;
+  width: 40vw;
   margin: auto;
 }
 
@@ -18,4 +24,9 @@
   right: 30vw;
   position:absolute;
   height: 15vw;
+}
+
+* {
+  box-sizing: border-box;
+  
 }
