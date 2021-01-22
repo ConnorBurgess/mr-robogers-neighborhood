@@ -30,7 +30,7 @@ Project utilizes Javascript arrays and looping to take input from user and trans
 Describe: beepBoop()
 
 Test: "It should return a string with "Beep!" if the number 1 is inputted"
-Expect(beepBoop(0).toEqual(["Beep!"]);
+Expect(beepBoop(1).toEqual(["Beep!"]);
 
 * * *
 
