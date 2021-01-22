@@ -9,11 +9,11 @@ function beepBoop(input) {
     inputArray.push(i);
   }
 
-  let stringArray = inputArray.map(String);
+  let counterArray = inputArray.map(String);
   let finalArray = inputArray.map(String);
 
   //foreach loop to iterate over each element in array
-  stringArray.forEach(function (element) {
+  counterArray.forEach(function (element) {
 
     //for loop to iterate over each character in string
     for (var i = 0; i <= element.length; i++) {
@@ -30,10 +30,13 @@ function beepBoop(input) {
       else if (element[i] === "1" && (/[2]/g.test(element))) {
         finalArray[element] = "Boop!";
       }
+      else if (element[i] === "2" && !(/[3]/g.test(element))) {
+        finalArray[element] = "Boop!";
       else {
         return;
       }
       console.log(finalArray);
+    //  console.log(counterArray);
       
     }
   });
