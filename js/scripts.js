@@ -17,27 +17,23 @@ function beepBoop(input) {
 
     //for loop to iterate over each character in string
     for (var i = 0; i <= element.length; i++) {
-
-      if (element[i] === "1"&& !(/[2]/g.test(element))) {
+      if (element[i] === "3") {
+        finalArray[element] = "Won't you be my neighbor?";
+      }
+      else if (element[i] === "1"&& !(/[2]/g.test(element))) {
         finalArray[element] = "Beep!";
       }
       else if (element[i] === "2" && !(/[3]/g.test(element))) {
         finalArray[element] = "Boop!";
       }
-      else if (element[i] === "3") {
-        finalArray[element] = "Won't you be my neighbor?";
-      }
       else if (element[i] === "1" && (/[2]/g.test(element))) {
         finalArray[element] = "Boop!";
       }
-      else if (element[i] === "2" && !(/[3]/g.test(element))) {
-        finalArray[element] = "Boop!";
+
       else {
         return;
       }
-      console.log(finalArray);
-    //  console.log(counterArray);
-      
+      console.log(finalArray);      
     }
   });
 }
@@ -47,7 +43,7 @@ function beepBoop(input) {
 
 // UI Logic
 
-beepBoop(30);
+beepBoop(333);
 
 //Take input
 
