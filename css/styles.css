@@ -14,14 +14,22 @@
   margin: auto;
 }
 
+#button-area {
+  border: 2px solid red;
+  margin-left: 10vw;
+  height: 5vw;
+  width: 40vw;
+
+}
+
 #output {
   display: flex;
   border: 2px solid blue;
   font-size: 32px;
   color: blue;
-  width: 40vw;
-  top: 8vw;
-  right: 30vw;
+  width: 33vw;
+  top: 17vw;
+  right: 33vw;
   position:absolute;
   height: 15vw;
 }

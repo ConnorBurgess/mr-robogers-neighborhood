@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,33 @@
   <script src="js/scripts.js"></script>
   <title>Mr Roboger's Neighborhood</title>
 </head>
+
 <body>
-  <div class="container"> 
-  <div class="jumbotron">
-    <h1>Mr. Roboger's Neighborhood</h1>
-  </div>
-  <div id="computer-screen"> <img src="/img/computer.png"> 
-  <div id="output"> <ul> Hello</ul>  </div>
-  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Mr. Roboger's Neighborhood</h1>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div id="computer-screen"> <img src="/img/computer.png">
+        </div>
+      </div>
+      <div id="output">
+        <ul> Hello</ul>
+      </div>
+      <div class="row" id="button-area">
+        <div class="col-12">
+          <form class="form-inline">
+            <label for="username"> Username</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="lname">Input any number!:</label><br>
+            <input type="text" id="lname" name="lname">
+            <button type="button" class="btn btn btn-danger">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Output log screen with input below and submit button -->
