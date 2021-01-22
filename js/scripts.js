@@ -4,7 +4,7 @@
 function beepBoop(input) {
 //  event.preventDefault();
   let inputArray = [];
-  for (var i = 1; i <= input; i++){
+  for (var i = 0; i <= input; i++){
     inputArray.push(i);
   }
   let stringArray = inputArray.map(String)
@@ -12,27 +12,29 @@ function beepBoop(input) {
     let inputValue = input.toString();
 
     stringArray.forEach(function(element) {
-      console.log(element);
+
     if (element === "1"){
-      console.log(stringArray.indexOf(element));
       stringArray[element] = element.replace(/[1]/g, "Beep!");
-      console.log(element);
+     console.log("hello")
+     console.log(stringArray);
+      return
+    }
+    else if (element === "2"){
+      stringArray[element] = element.replace(/[2]/g, "Boop!");
+   //   console.log(inputValue);
       console.log(stringArray);
       return
     }
-    else if (input === 2){
-      inputValue = inputValue.replace(/[2]/g, "Boop!");
-   //   console.log(inputValue);
-    }
-    else if (input === 3){
-      inputValue = inputValue.replace(/3/g, "Won't you be my neighbor?");
+    else if (element === "3"){
+      stringArray[element] = element.replace(/[3]/g, "Won't you be my neighbor?");
     //  console.log(inputValue);
+    console.log(stringArray);
 
     }
   
     else {
       console.log("Failed");
-      
+      return;
     }
   });
 }
