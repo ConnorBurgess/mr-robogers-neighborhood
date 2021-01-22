@@ -5,17 +5,19 @@ function beepBoop(input) {
 //  event.preventDefault();
   let inputArray = [];
   for (var i = 1; i <= input; i++){
-    inputArray.push(i);
-
+    inputArray.push(i).toString();
   }
-  console.log(inputArray);
 
 
     let inputValue = input.toString();
 
-    if (input === 1){
-      inputValue = inputValue.replace(/[1]/g, "Beep!");
-   //   console.log(inputValue);
+    inputArray.forEach(function(element) {
+    
+    if (element === 1){
+      element = element.toString();
+      element = element.replace(/[1]/g, "Beep!");
+      console.log(inputArray);
+      console.log("lol");
     }
     else if (input === 2){
       inputValue = inputValue.replace(/[2]/g, "Boop!");
@@ -31,7 +33,7 @@ function beepBoop(input) {
       console.log("Failed");
       
     }
-  
+  });
 }
 
 
