@@ -16,7 +16,7 @@ function beepBoop(input) {
     //for loop to iterate over each character in string
     for (var i = 0; i <= element.length; i++) {
 
-      if (element[i] === "1" && !(/[2]/g.test(element)) && !(/[3]/g.test(element))) {
+      if (element[i] === "1") {
         stringArray[element] = element[i].replace(/[1]/g, "Beep!");
 
         console.log(/[13]/g.test(element));
@@ -31,7 +31,12 @@ function beepBoop(input) {
       else if (element[i] === "3") {
         stringArray[element] = element.replace(/[3]/g, "Won't you be my neighbor?");
         //  console.log(inputValue);
+      }
+      if (element[i] === "1" && !(/[2]/g.test(element)) && !(/[3]/g.test(element))) {
+        stringArray[element] = element[i].replace(/[1]/g, "Beep!");
 
+        console.log(/[13]/g.test(element));
+        return
       }
       else {
         console.log("Failed");
