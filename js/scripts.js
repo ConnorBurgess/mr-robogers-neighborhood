@@ -12,7 +12,7 @@ function beepBoop(input) {
   let finalArray = inputArray.map(String);
 
   //foreach loop to iterate over each element in array
-  counterArray.forEach(function (element) {
+  const resultArray = counterArray.map(function(element) {
 
     //for loop to iterate over each character in string
     for (var i = 0; i <= element.length; i++) {
@@ -29,27 +29,28 @@ function beepBoop(input) {
         finalArray[element] = "Boop!";
       }
       else {
-      }
-      console.log(finalArray);     
+      }  
     }
+    return finalArray;
   });
 }
 
 
-beepBoop(5);
+console.log (beepBoop(5));
 
 // UI Logic
 
 
 $("#submit-form").submit(function (event) {
   event.preventDefault();
-  const nameInput = $("input#first-input").val();
+  let testNum = [];
+  testNum = beepBoop(5);
+  //const inputNum = $("input#first-input").val();
   $("#output").empty();
-  $("#output").text("Hello" + nameInput + " check this out... " + beepBoop(5));
-   
-
+  $("#output").text("Hello" + username + " check this out... " + 5);
+  console.log(testNum);
 });
-}
+});
   //  event.preventDefault();
 //Take input
 
