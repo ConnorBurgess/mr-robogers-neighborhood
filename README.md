@@ -1,11 +1,10 @@
-# Generic Project
-#### Created By: Connor Burgess * 
-#### *Co-Created By: * 
+# Mr Roboger's Neighborhood
+#### Created By: Connor Burgess
 
 * * *
 
 ## Description  
-Description
+Project utilizes Javascript arrays and looping to take input from user and transform to returned strings.
 
 * * *
 
@@ -21,8 +20,19 @@ Description
 ## Setup instructions:  
 * Go to [Github Pages](Link) to see webpage
 #### Alt
-* Clone Repo (Link: )
+* Clone Repository (Link:https://github.com/ConnorBurgess/mr-robogers-neighborhood.git)
 * Open index.html in browser
+
+* * *
+
+## Speccs
+
+Describe: beepBoop()
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Expect(beepBoop(0).toEqual([0]);
+
+* * *
+
 
 * * *
 
@@ -32,8 +42,8 @@ Description
 * * *
 
 ## Addition comments:
-* Created on x/x/21  
-* Currently in development and unfinished (*as of x/x/21*)
+* Created on 01/22/21  
+
 
 * * *
 
