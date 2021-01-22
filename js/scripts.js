@@ -1,10 +1,12 @@
 //Business logic
 $(document).ready(function() {
-  event.preventDefault();
+
 function beepBoop(input) {
-  for (i=0; i >= 2; i++){
+//  event.preventDefault();
+  for (i = 0; i <= 2; i++){
     if (input === 1){
-      input.replace(/\d[1]/g, "Beep!");
+      let inputValue = input;
+      inputValue.toString().replace(/\d[1]/g, "Beep!");
       console.log(input);
       console.log("Beep!");
     }
