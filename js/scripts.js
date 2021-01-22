@@ -1,8 +1,7 @@
 //Business logic
-//$(document).ready(function() {
-
+$(document).ready(function() {
 function beepBoop(input) {
-  //  event.preventDefault();
+
   //Declare array and convert to string
   let inputArray = [];
   for (var i = 0; i <= input; i++) {
@@ -37,12 +36,21 @@ function beepBoop(input) {
 }
 
 
-
+beepBoop(5);
 
 // UI Logic
 
-beepBoop(393);
 
+$("#submit-form").submit(function (event) {
+  event.preventDefault();
+  const nameInput = $("input#first-input").val();
+  $("#output").empty();
+  $("#output").text("Hello" + nameInput + " check this out... " + beepBoop(5));
+   
+
+});
+}
+  //  event.preventDefault();
 //Take input
 
 //Push to inputArray (JQuery submit single use)
