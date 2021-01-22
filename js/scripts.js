@@ -4,11 +4,16 @@
 function beepBoop(input) {
 //  event.preventDefault();
   for (var i = 0; i < 2; i++){
-    if (input === 1){
     let inputValue = input.toString();
+    
+    if (input === 1){
+
       inputValue = inputValue.replace(/[0-9]/g, "Beep!");
       console.log(inputValue);
       break;
+    }
+    else if {
+
     }
     else {
       console.log("Failed");

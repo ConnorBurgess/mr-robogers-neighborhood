@@ -32,6 +32,10 @@ Describe: beepBoop()
 Test: "It should return a string with "Beep!" if the number 1 is inputted"
 Expect(beepBoop(1).toEqual(["Beep!"]);
 
+Test: "It should return a string with "Boop!" if the number 2 is inputted"
+Expect(beepBoop(2).toEqual(["Boop!"]);
+
+
 * * *
 
 
