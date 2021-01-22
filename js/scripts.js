@@ -3,17 +3,16 @@
 
 function beepBoop(input) {
 //  event.preventDefault();
-  for (var i = 0; i < 2; i++){
+  for (var i = 0; i < 4; i++){
     let inputValue = input.toString();
-    
+
     if (input === 1){
-
-      inputValue = inputValue.replace(/[0-9]/g, "Beep!");
+      inputValue = inputValue.replace(/[1]/g, "Beep!");
       console.log(inputValue);
-      break;
     }
-    else if {
-
+    else if (input === 2){
+      inputValue = inputValue.replace(/[2]/g, "Boop!");
+      console.log(inputValue);
     }
     else {
       console.log("Failed");
@@ -28,7 +27,8 @@ function beepBoop(input) {
 // UI Logic
 
 beepBoop(2);
-
+beepBoop(1);
+beepBoop(3);
 //Take input
 
 //Push to inputArray (JQuery submit single use)
