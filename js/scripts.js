@@ -29,9 +29,7 @@ function beepBoop(input) {
       else if (element[i] === "1" && (/[2]/g.test(element)) && !(/[3]/g.test(element))) {
         finalArray[element] = "Boop!";
       }
-
       else {
- 
       }
       console.log(finalArray);     
     }

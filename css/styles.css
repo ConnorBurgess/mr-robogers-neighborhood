@@ -1,0 +1,21 @@
+#computer-screen {
+  border: 2px solid green;
+  display: flex;
+}
+
+#computer-screen img {
+  width: 45vw;
+  margin: auto;
+}
+
+#output {
+  display: flex;
+  border: 2px solid blue;
+  font-size: 32px;
+  color: blue;
+  width: 40vw;
+  top: 8vw;
+  right: 30vw;
+  position:absolute;
+  height: 15vw;
+}
