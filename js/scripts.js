@@ -1,7 +1,6 @@
 //Business logic
-$(document).ready(function() {
-function beepBoop(input) {
 
+function beepBoop(input) {
   //Declare array and convert to string
   let inputArray = [];
   for (var i = 0; i <= input; i++) {
@@ -18,6 +17,7 @@ function beepBoop(input) {
     for (var i = 0; i <= element.length; i++) {
       if (element[i] === "3") {
         finalArray[element] = "Won't you be my neighbor?";
+        console.log(finalArray);
       }
       else if (element[i] === "1" && !(/[2]/g.test(element)) && !(/[3]/g.test(element))) {
         finalArray[element] = "Beep!";
@@ -30,25 +30,34 @@ function beepBoop(input) {
       }
       else {
       }  
+
     }
-    return finalArray;
+
   });
+  console.log(finalArray);
+  return finalArray;
+
 }
 
 
-console.log (beepBoop(5));
+
 
 // UI Logic
 
-
+$(document).ready(function() {
 $("#submit-form").submit(function (event) {
-  event.preventDefault();
+console.log(beepBoop(5));
   let testNum = [];
   testNum = beepBoop(5);
   //const inputNum = $("input#first-input").val();
   $("#output").empty();
   $("#output").text("Hello" + username + " check this out... " + 5);
   console.log(testNum);
+  event.preventDefault();
+  
+  testarray = beepBoop(5);
+
+  console.log(testarray);
 });
 });
   //  event.preventDefault();
