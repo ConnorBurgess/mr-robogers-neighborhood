@@ -8,7 +8,9 @@ function beepBoop(input) {
   for (var i = 0; i <= input; i++) {
     inputArray.push(i);
   }
-  let stringArray = inputArray.map(String)
+
+  let stringArray = inputArray.map(String);
+  let finalArray = inputArray.map(String);
 
   //foreach loop to iterate over each element in array
   stringArray.forEach(function (element) {
@@ -16,33 +18,23 @@ function beepBoop(input) {
     //for loop to iterate over each character in string
     for (var i = 0; i <= element.length; i++) {
 
-      if (element[i] === "1") {
-        stringArray[element] = element[i].replace(/[1]/g, "Beep!");
-
-        console.log(/[13]/g.test(element));
-        return
+      if (element[i] === "1"&& !(/[2]/g.test(element))) {
+        finalArray[element] = "Beep!";
       }
       else if (element[i] === "2" && !(/[3]/g.test(element))) {
-        stringArray[element] = element.replace(/[2]/g, "Boop!");
-        //   console.log(inputValue);
-
-        return
+        finalArray[element] = "Boop!";
       }
       else if (element[i] === "3") {
-        stringArray[element] = element.replace(/[3]/g, "Won't you be my neighbor?");
-        //  console.log(inputValue);
+        finalArray[element] = "Won't you be my neighbor?";
       }
-      if (element[i] === "1" && !(/[2]/g.test(element)) && !(/[3]/g.test(element))) {
-        stringArray[element] = element[i].replace(/[1]/g, "Beep!");
-
-        console.log(/[13]/g.test(element));
-        return
+      else if (element[i] === "1" && (/[2]/g.test(element))) {
+        finalArray[element] = "Boop!";
       }
       else {
-        console.log("Failed");
         return;
       }
-      console.log(stringArray);
+      console.log(finalArray);
+      
     }
   });
 }
@@ -52,7 +44,7 @@ function beepBoop(input) {
 
 // UI Logic
 
-beepBoop(222);
+beepBoop(30);
 
 //Take input
 
