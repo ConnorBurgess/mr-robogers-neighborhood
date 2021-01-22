@@ -2,39 +2,40 @@
 //$(document).ready(function() {
 
 function beepBoop(input) {
-//  event.preventDefault();
+  //  event.preventDefault();
   let inputArray = [];
-  for (var i = 0; i <= input; i++){
+  for (var i = 0; i <= input; i++) {
     inputArray.push(i);
   }
   let stringArray = inputArray.map(String)
 
-    let inputValue = input.toString();
+  let inputValue = input.toString();
 
-    stringArray.forEach(function(element) {
+  stringArray.forEach(function (element) {
 
-    if (element === "1"){
-      stringArray[element] = element.replace(/[1]/g, "Beep!");
-     console.log("hello")
-     console.log(stringArray);
-      return
-    }
-    else if (element === "2"){
-      stringArray[element] = element.replace(/[2]/g, "Boop!");
-   //   console.log(inputValue);
-      console.log(stringArray);
-      return
-    }
-    else if (element === "3"){
-      stringArray[element] = element.replace(/[3]/g, "Won't you be my neighbor?");
-    //  console.log(inputValue);
-    console.log(stringArray);
+    for (var i = 0; i < element.length; i++) {
+      if (element === "1") {
+        stringArray[element] = element.replace(/[1]/g, "Beep!");
+        console.log(stringArray);
+        return
+      }
+      else if (element === "2") {
+        stringArray[element] = element.replace(/[2]/g, "Boop!");
+        //   console.log(inputValue);
+        console.log(stringArray);
+        return
+      }
+      else if (element === "3") {
+        stringArray[element] = element.replace(/[3]/g, "Won't you be my neighbor?");
+        //  console.log(inputValue);
+        console.log(stringArray);
 
-    }
-  
-    else {
-      console.log("Failed");
-      return;
+      }
+
+      else {
+        console.log("Failed");
+        return;
+      }
     }
   });
 }
@@ -44,7 +45,7 @@ function beepBoop(input) {
 
 // UI Logic
 
-beepBoop(10);
+beepBoop(5);
 
 //Take input
 
