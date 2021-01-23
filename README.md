@@ -48,7 +48,7 @@ Expect(beepBoop(1, 3).toEqual(["Won't you be my neighbor?"])
 * * *
 
 ## To Do:
-* N/A
+* Make computer button turn off screen in UI
 
 * * *
 

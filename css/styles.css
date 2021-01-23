@@ -32,6 +32,8 @@
   right: 33vw;
   position:absolute;
   height: 15vw;
+  white-space: normal;
+  overflow: scroll
 }
 
 * {

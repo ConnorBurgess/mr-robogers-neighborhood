@@ -49,10 +49,9 @@ $("#submit-form").submit(function (event) {
 console.log(beepBoop(5));
   let testNum = [];
   testNum = beepBoop(5);
-  //const inputNum = $("input#first-input").val();
   $("#output").empty();
-  $("#output").text("Hello" + username + " check this out this nonsense... \n" + beepBoop($("input#input-number").val()));
-  console.log(testNum);
+  $("#output").text("Hello " + $("input#username").val().charAt(0).toUpperCase() + $("input#username").val().slice(1) + " check this out this nonsense... \n" + beepBoop($("input#input-number").val()));
+  $('#input-number').val('');
   event.preventDefault();
 
 
