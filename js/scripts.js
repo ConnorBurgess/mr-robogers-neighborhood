@@ -1,5 +1,4 @@
 //Business logic
-
 function beepBoop(input) {
   let inputArray = [];
   for (var i = 0; i <= input; i++) {
@@ -32,12 +31,9 @@ function beepBoop(input) {
 $(document).ready(function () {
   $("#submit-form").submit(function (event) {
     console.log(beepBoop(5));
-    let testNum = [];
-    testNum = beepBoop(5);
     $("#output").empty();
     $("#output").text("Hello " + $("input#username").val().charAt(0).toUpperCase() + $("input#username").val().slice(1) + " check this out this nonsense... \n" + beepBoop($("input#input-number").val()));
     $('#input-number').val('');
     event.preventDefault();
-    console.log(testArray);
   });
 });

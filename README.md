@@ -25,7 +25,7 @@ Project utilizes Javascript arrays and looping to take input from user and trans
 
 * * *
 
-## Speccs
+## Specs
 
 Describe: beepBoop()
 
