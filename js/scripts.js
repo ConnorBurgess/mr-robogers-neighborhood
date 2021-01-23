@@ -34,7 +34,7 @@ function beepBoop(input) {
     }
 
   });
-  console.log(finalArray);
+
   return finalArray;
 
 }
@@ -51,13 +51,13 @@ console.log(beepBoop(5));
   testNum = beepBoop(5);
   //const inputNum = $("input#first-input").val();
   $("#output").empty();
-  $("#output").text("Hello" + username + " check this out... " + 5);
+  $("#output").text("Hello" + username + " check this out this nonsense... \n" + beepBoop($("input#input-number").val()));
   console.log(testNum);
   event.preventDefault();
-  
-  testarray = beepBoop(5);
 
-  console.log(testarray);
+
+
+  console.log(testArray);
 });
 });
   //  event.preventDefault();
