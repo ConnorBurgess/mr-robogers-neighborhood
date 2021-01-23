@@ -49,7 +49,8 @@ Expect(beepBoop(1, 3).toEqual(["Won't you be my neighbor?"])
 
 ## To Do:
 * Make computer button turn off screen in UI
-
+* Add keyboard with clickable numbers
+* Burger screensaver
 * * *
 
 ## Addition comments:
