@@ -34,6 +34,8 @@ $(document).ready(function () {
     $("#burger").hide();
     $("#output").text("Hello " + $("input#username").val().charAt(0).toUpperCase() + $("input#username").val().slice(1) + " check this out this nonsense... \n" + beepBoop($("input#input-number").val()));
     $("#output").css("color", "red").slideDown(2000);
+    $("#burger").show(20000);
+    $("#output").fadeOut(20000);
     $('#input-number').val('');
     event.preventDefault();
   });
