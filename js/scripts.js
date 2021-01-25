@@ -10,7 +10,6 @@ function beepBoop(input) {
     for (var i = 0; i <= element.length; i++) {
       if (element[i] === "3") {
         finalArray[element] = "Won't you be my neighbor?";
-        console.log(finalArray);
       }
       else if (element[i] === "1" && !(/[2]/g.test(element)) && !(/[3]/g.test(element))) {
         finalArray[element] = "Beep!";
