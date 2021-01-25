@@ -7,6 +7,9 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <title>Mr Roboger's Neighborhood</title>
 </head>
 <body>
@@ -17,18 +20,19 @@
     <div class="row">
       <div class="col-12">
         <div id="computer-screen"> <img src="/img/computer.png">
+          <div id="burger"> <img src=/img/burger.gif> </div>
         </div>
       </div>
       <div id="output">
-        <ul> Mr. Roboger loves to eat numbers . . .</ul>
+        <ul></ul>
       </div>
       <div class="row" id="button-area">
         <div class="col-12">
           <form id="submit-form">
             <form class="form-inline submit-group">
-              <label for="username"> Username</label><br>
+              <label id="username-label" for="username"> Your Name</label><br>
               <input type="text" id="username" name="username"><br>
-              <label for="input-number">Input any number!:</label><br>
+              <label id="input-label" for="input-number">Pick a number</label><br>
               <input type="text" id="input-number" name="input-number">
               <button type="submit" class="btn btn btn-danger">Submit</button>
             </form>

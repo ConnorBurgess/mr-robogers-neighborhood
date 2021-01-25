@@ -1,10 +1,18 @@
 .jumbotron { 
   text-align:center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  background-color: lightblue;
+  color:coral;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  border: 4px solid silver;
+  border-bottom: 10px solid silver;
 }
 
 #computer-screen {
-  border: 2px solid green;
+  border-bottom: 2px solid silver;
+  border-right: 4px solid silver;
+  border-left: 4px solid silver;
   display: flex;
   height:37vw;
 }
@@ -12,19 +20,29 @@
 #computer-screen img {
   width: 40vw;
   margin: auto;
+  -webkit-user-drag: none; 
+}
+
+#burger {
+  display: flex;
+  position: absolute;
+  right: 25vw;
+  top: 6vw;
+}
+#burger img {
+  width: 15vw;
 }
 
 #button-area {
-  border: 2px solid red;
-  margin-left: 10vw;
+  margin-left: 2vw;
+  top: 38vw;
   height: 5vw;
   width: 40vw;
-
+  position: absolute;
 }
 
 #output {
   display: flex;
-  border: 2px solid blue;
   font-size: 32px;
   color: red;
   width: 33vw;
@@ -33,7 +51,22 @@
   position:absolute;
   height: 15vw;
   white-space: normal;
-  overflow: scroll
+  overflow: scroll;
+  font-family: 'Monoton', cursive;
+}
+
+#input-number, #username {
+  width:5vw;
+  margin-right:2vw;
+}
+
+#input-label, #username-label {
+  font-family: 'Anton', sans-serif;
+  color:rgb(41, 29, 25);
+  font-size: 1.2vw;
+  margin-bottom: 0vw;
+  margin-top: 1vw;
+
 }
 
 * {
